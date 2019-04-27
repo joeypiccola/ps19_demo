@@ -1,6 +1,6 @@
 #### Automating the Automation
 ### @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
-##### with Joey Piccola
+#### with Joey Piccola
 
 ---
 
@@ -14,8 +14,6 @@
 
 ### Puppet APIs
 
-@ul
-
 - orchestrator API
   - /jobs endpoint
   - /tasks endpoint
@@ -24,8 +22,6 @@
   - /certificate_status endpoint
 - pdb API
   - /command endpoint
-
-@ulend
 
 ---
 
