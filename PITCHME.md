@@ -14,13 +14,13 @@
 
 ### Puppet APIs
 
-- orchestrator API
+- @color[#00FDFF](orchestrator) API
   - /jobs endpoint
   - /tasks endpoint
   - /commands endpoint
-- puppet-ca API
+- [#00F900](puppet-ca) API
   - /certificate_status endpoint
-- pdb API
+- [#FF40FF](pdb) API
   - /command endpoint
 
 ---
