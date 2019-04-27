@@ -1,14 +1,26 @@
-### Automating the automation with
-### @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
+### Automating the Automation
+## @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
 
 ---
 
 ### Agenda
 
--
--
--
--
--
+- Puppet APIs
+- Invoke-RestMethod
+- Demo
 
 ---
+
+### Puppet APIs
+
+- orchestrator API
+  - /jobs endpoint
+  - /tasks endpoint
+  - /commands endpoint
+- puppet-ca API
+  - /certificate_status endpoint
+- pdb API
+  - /command endpoint
+
+---
+
