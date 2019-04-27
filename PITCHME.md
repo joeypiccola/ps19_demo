@@ -1,5 +1,5 @@
-### Automating the Automation
-## @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
+#### Automating the Automation
+### @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
 
 ---
 
