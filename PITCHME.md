@@ -2,6 +2,8 @@
 ### @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
 #### with Joey Piccola
 
+![mods](assets/image/ava.jpg)
+
 ---
 
 ### Agenda
@@ -17,11 +19,11 @@
 - @color[#00FDFF](orchestrator API)
   - /jobs endpoint
   - /tasks endpoint
-  - /commands endpoint
+  - /command endpoint
 - @color[#00F900](puppet-ca API)
   - /certificate_status endpoint
 - @color[#FF40FF](pdb API)
-  - /command endpoint
+  - /cmd endpoint
 
 ---
 
