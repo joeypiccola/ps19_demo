@@ -61,5 +61,48 @@ $removePuppetDBNodeSplat = @{
 Remove-PuppetDBNode @removePuppetDBNodeSplat -Verbose
 #endregion
 
+#region Invoke(Get) and Get Puppet Task
 
-Invoke-PuppetTask -Token $token -Master $master -Task 'powershell_tasks::account_audit' -Scope nodes
+$scope = @('node2.ad.piccola.us','joey-clone-test.ad.piccola.us')
+$invokePuppetTaskSplat = @{
+    Token = $token
+    Master = $master
+    Task = 'powershell_tasks::account_audit'
+    Environment = 'development'
+    Description = 'local admin account audit'
+    Scope = $scope
+    ScopeType = 'nodes'
+}
+
+Invoke-PuppetTask @invokePuppetTaskSplat -Wait 120
+
+$getPuppetJobResultsSplat = @{
+    master = $master
+    token  = $token
+    id     = '?'
+}
+
+Get-PuppetJobResults @getPuppetJobResultsSplat
+
+#endregion
+
+#region Invoke(Set) and Get Puppet Task
+
+$scope = @('node2.ad.piccola.us','joey-clone-test.ad.piccola.us')
+$invokePuppetTaskSplat = @{
+    Token = $token
+    Master = $master
+    Task = 'powershell_tasks::disablesmbv1'
+    Environment = 'production'
+    Parameters = [PSCustomObject]@{
+        action = 'set'
+        reboot = $true
+    }
+    Description = 'Set SMBv1'
+    Scope = $scope
+    ScopeType = 'nodes'
+}
+
+Invoke-PuppetTask @invokePuppetTaskSplat -Wait 120
+
+#endregion
