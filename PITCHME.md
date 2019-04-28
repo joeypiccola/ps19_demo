@@ -9,7 +9,8 @@
 - Puppet APIs
 - Demo
   - Puppet Node LifeCycle Management
-  - Account Audits
+  - Account Audits (passive task)
+  - Disable SMBv1 (active task)
 
 ---
 
