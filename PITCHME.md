@@ -2,8 +2,6 @@
 ### @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
 #### with Joey Piccola
 
-![mods](assets/image/ava2.png)
-
 ---
 
 ### Agenda
@@ -27,3 +25,18 @@
 
 ---
 
+### Functions
+
+```powershell
+Get-PuppetTask
+Get-PuppetJobResults
+Get-PuppetJobReport
+Get-PuppetJob
+Get-PuppetTasks
+Invoke-PuppetTask
+Get-PuppetNodeCertificateStatus
+Set-PuppetNodeCertificateStatus
+Remove-PuppetNodeCertificate
+Get-PuppetDBNode
+Remove-PuppetDBNode
+```
