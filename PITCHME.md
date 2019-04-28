@@ -7,8 +7,9 @@
 ### Agenda
 
 - Puppet APIs
-- Invoke-RestMethod
 - Demo
+  - Puppet Node LifeCycle Management
+  - Account Audits
 
 ---
 
@@ -24,19 +25,3 @@
   - /cmd endpoint
 
 ---
-
-### Functions
-
-```powershell
-Get-PuppetTask
-Get-PuppetJobResults
-Get-PuppetJobReport
-Get-PuppetJob
-Get-PuppetTasks
-Invoke-PuppetTask
-Get-PuppetNodeCertificateStatus
-Set-PuppetNodeCertificateStatus
-Remove-PuppetNodeCertificate
-Get-PuppetDBNode
-Remove-PuppetDBNode
-```
