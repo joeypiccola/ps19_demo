@@ -2,7 +2,7 @@
 ### @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
 #### with Joey Piccola
 
-![mods](assets/image/ava.jpg)
+![mods](assets/image/ava2.png)
 
 ---
 
