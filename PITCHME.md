@@ -14,6 +14,12 @@
 
 ---
 
+#### an orchestration tool
+
+![cloudtool](assets/image/m.jpg)
+
+---
+
 ### Puppet APIs
 
 - @color[#00FDFF](orchestrator API)
