@@ -16,7 +16,7 @@
 
 #### an orchestration tool
 
-![cloudtool](assets/image/m.jpg)
+![cloudtool](assets/image/mp.jpg)
 
 ---
 
