@@ -6,6 +6,7 @@
 
 ### Agenda
 
+- An orchestration tool
 - Puppet APIs
 - Demo
   - Puppet Node LifeCycle Management
