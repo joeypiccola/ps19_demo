@@ -1,16 +1,23 @@
 #### Automating the Automation
 ### @color[#2e75e8](PowerShell) and @color[#FFAD1A](Puppet)
-#### with Joey Piccola
+#### with @joeypiccola
 
 ---
 
 ### Agenda
 
+- An orchestration tool
 - Puppet APIs
 - Demo
   - Puppet Node LifeCycle Management
   - Account Audits (passive task)
   - Disable SMBv1 (active task)
+
+---
+
+#### an orchestration tool
+
+![cloudtool](assets/image/mp.jpg)
 
 ---
 

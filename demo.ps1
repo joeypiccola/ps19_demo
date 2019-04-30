@@ -1,13 +1,15 @@
 #region Get and Set Puppet Node Certificate
 
+Clear-Host
 $getPuppetNodeCertificateStatusSplat = @{
     master       = $master
     node         = 'node1.ad.piccola.us'
     certPath     = './joey.piccola.us.pfx'
     certPassword = $certpwd
 }
-Get-PuppetNodeCertificateStatus @getPuppetNodeCertificateStatusSplat -Verbose
+Get-PuppetNodeCertificateStatus @getPuppetNodeCertificateStatusSplat
 
+Clear-Host
 $setPuppetNodeCertificateStatusSplat = @{
     master        = $master
     node          = 'node1.ad.piccola.us'
@@ -15,20 +17,22 @@ $setPuppetNodeCertificateStatusSplat = @{
     certPassword  = $certpwd
     desired_state = 'signed'
 }
-Set-PuppetNodeCertificateStatus @setPuppetNodeCertificateStatusSplat -Verbose
+Set-PuppetNodeCertificateStatus @setPuppetNodeCertificateStatusSplat
 
 #endregion
 
 #region Get, Set, and Delete Puppet Node Certificate/pdb
 
+Clear-Host
 $getPuppetNodeCertificateStatusSplat = @{
     master       = $master
     node         = 'node2.ad.piccola.us'
     certPath     = './joey.piccola.us.pfx'
     certPassword = $certpwd
 }
-Get-PuppetNodeCertificateStatus @getPuppetNodeCertificateStatusSplat -Verbose
+Get-PuppetNodeCertificateStatus @getPuppetNodeCertificateStatusSplat
 
+Clear-Host
 $setPuppetNodeCertificateStatusSplat = @{
     master        = $master
     node          = 'node2.ad.piccola.us'
@@ -36,33 +40,37 @@ $setPuppetNodeCertificateStatusSplat = @{
     certPassword  = $certpwd
     desired_state = 'revoked'
 }
-Set-PuppetNodeCertificateStatus @setPuppetNodeCertificateStatusSplat -Verbose
+Set-PuppetNodeCertificateStatus @setPuppetNodeCertificateStatusSplat
 
+Clear-Host
 $removePuppetNodeCertificateSplat = @{
     master       = $master
     node         = 'node2.ad.piccola.us'
     certPath     = './joey.piccola.us.pfx'
     certPassword = $certpwd
 }
-Remove-PuppetNodeCertificate @removePuppetNodeCertificateSplat -Verbose
+Remove-PuppetNodeCertificate @removePuppetNodeCertificateSplat
 
+Clear-Host
 $getPuppetDBNodeSplat = @{
     master = $master
     node   = 'node2.ad.piccola.us'
     token  = $token
 }
-Get-PuppetDBNode @getPuppetDBNodeSplat -Verbose
+Get-PuppetDBNode @getPuppetDBNodeSplat
 
+Clear-Host
 $removePuppetDBNodeSplat = @{
     master = $master
     node   = 'node2.ad.piccola.us'
     token  = $token
 }
-Remove-PuppetDBNode @removePuppetDBNodeSplat -Verbose
+Remove-PuppetDBNode @removePuppetDBNodeSplat
 #endregion
 
 #region Invoke(Get) and Get Puppet Task
 
+Clear-Host
 $scope = @('node2.ad.piccola.us','joey-clone-test.ad.piccola.us')
 $invokePuppetTaskSplat = @{
     Token = $token
@@ -76,10 +84,11 @@ $invokePuppetTaskSplat = @{
 
 Invoke-PuppetTask @invokePuppetTaskSplat -Wait 120
 
+Clear-Host
 $getPuppetJobResultsSplat = @{
     master = $master
     token  = $token
-    id     = '?'
+    id     = '785'
 }
 
 Get-PuppetJobResults @getPuppetJobResultsSplat
@@ -88,6 +97,7 @@ Get-PuppetJobResults @getPuppetJobResultsSplat
 
 #region Invoke(Set) and Get Puppet Task
 
+Clear-Host
 $scope = @('node2.ad.piccola.us','joey-clone-test.ad.piccola.us')
 $invokePuppetTaskSplat = @{
     Token = $token
